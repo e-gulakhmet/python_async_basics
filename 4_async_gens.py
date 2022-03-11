@@ -22,7 +22,7 @@ def server():
         client_socket, address = server_socket.accept()
         print("Новое подключение от:", address)
         # Добавляем генераторную функцию для работы с клиентским сокетом,
-        # для обработки коннект с клиентом
+        # для обработки коннекта с клиентом
         tasks.append(client(client_socket))
 
 
